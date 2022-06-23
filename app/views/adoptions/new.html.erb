@@ -1,0 +1,15 @@
+
+
+<%= simple_form_for [@tree, @adoption] do |f| %>
+<%= f.input :name %>
+  <%= f.input :starts_at, label: "Choisis le début de ton adoption pour un an",
+   as: :date %>
+  <%= f.input :ends_at, as: :date %>
+  <%= f.submit "Book me!", class: "btn btn-success" %>
+<% end %>
+<br>
+<br>
+
+
+<%= link_to "Book another tree?", trees_path, class:"btn btn-success" %>
+<%= link_to "all your adoptions", tree_adoptions_path, class:"btn btn-success" %>

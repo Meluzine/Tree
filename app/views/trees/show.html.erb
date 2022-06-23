@@ -1,0 +1,14 @@
+<div>
+  <%= @tree.name %>
+  <%= @tree.description%>
+  <%= @tree.price_per_year%>
+</div>
+ <div>
+<%= link_to "Edites ton arbre", edit_tree_url(@tree) , class: "btn btn-success"%>
+<%= link_to "delete", tree_path(@tree), method: :delete, data: { confirm: "Are you sure you want to delete your tree 🧐? "} , class: "btn btn-success" %>
+
+<%= link_to "Retour Menu", root_path, class: "btn btn-success" %>
+
+<%= link_to "adopte-moi!", new_tree_adoption_path(@tree), class: "btn btn-success" %>
+
+</div>

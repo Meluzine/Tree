@@ -1,0 +1,6 @@
+<p>voici les arbres</p>
+<% @trees.each do |tree| %>
+<%= link_to tree.name, tree_path(tree),class: "btn btn-success" %>
+<% end %>
+
+<%= link_to "Retour Menu", root_path, class: "btn btn-success" %>

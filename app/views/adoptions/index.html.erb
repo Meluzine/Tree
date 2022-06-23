@@ -1,0 +1,8 @@
+<p>voici les adoptions</p>
+<% @adoptions.each do |adoption| %>
+<%= adoption.name %>
+<%= adoption.starts_at %>
+<%= adoption.ends_at %>
+<% end %>
+
+<%= link_to "Retour Menu", root_path, class: "btn btn-success" %>

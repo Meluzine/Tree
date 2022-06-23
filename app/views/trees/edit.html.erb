@@ -1,0 +1,17 @@
+<p>edit</p>
+ <div class="row">
+    <div class="col-12 col-md-6 offset-lg-3">
+      <div class="bg-white rounded p-3 shadow">
+        <%= simple_form_for @tree do |f| %>
+          <%= f.input :name %>
+          <%= f.input :description %>
+          <%= f.input :fruits %>
+          <%= f.input :address %>
+          <%= f.input :price_per_year %>
+          <%= f.input :quantity_by_year %>
+          <%= f.submit class: 'btn btn-secondary' %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
